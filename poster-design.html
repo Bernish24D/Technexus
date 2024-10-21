@@ -22,6 +22,7 @@
             position: relative; /* To stay on top of the video */
             color: black; /* Text color for all except title */
             z-index: 2; /* Ensure the container is above the background */
+            overflow: visible; /* Ensure the content doesn't scroll separately */
         }
 
         /* Style for the video background */
@@ -64,7 +65,7 @@
             color: white; /* Title text color remains white */
         }
 
-        /* Style for the submission-info with scroll */
+        /* Style for the submission-info */
         .submission-info {
             background-color: rgba(255, 182, 193, 0.9); /* Light pink with transparency */
             padding: 20px;
@@ -73,8 +74,8 @@
             margin-top: 20px;
             font-size: 16px;
             text-align: left; /* Align all text to the left */
-            max-height: 400px; /* Limit height to ensure scrolling */
-            overflow-y: auto; /* Enable vertical scroll if content exceeds height */
+            max-height: none; /* Remove max-height to let it expand */
+            overflow: visible; /* Ensure no scrollbar for this box */
         }
 
         .submission-info p {
@@ -125,7 +126,7 @@
     <div class="container">
         <h1>POSTER DESIGNING</h1>
         
-        <!-- Submission info with its own scroll -->
+        <!-- Submission info without its own scroll -->
         <div class="submission-info">
             <p><strong>Theme:</strong> <em>Future Tech: Innovations Shaping Tomorrow</em></p>
             <p>1. Any editing software can be used to design the poster (e.g., Photoshop, Canva, GIMP, etc.).</p>

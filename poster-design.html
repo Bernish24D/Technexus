@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POSTER DESIGNING</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Style for the container */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative; /* To stay on top of the video */
+            color: black; /* Text color for all except title */
+        }
+
+        /* Style for the video background */
+        .video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Send video behind the content */
+            overflow: hidden;
+        }
+
+        .background-video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Style for each pink box */
+        .link-box {
+            background-color: pink;
+            color: black;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            width: 180px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        /* Style for the heading (title remains white) */
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            font-size: 32px;
+            color: white; /* Title text color remains white */
+        }
+
+        /* Style for the submission-info */
+        .submission-info {
+            background-color: rgba(255, 182, 193, 0.9); /* Light pink with transparency */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            margin-top: 20px;
+            font-size: 16px;
+            text-align: left; /* Align all text to the left */
+        }
+
+        .submission-info p {
+            margin: 10px 0;
+            color: black; /* All paragraphs text color is now black */
+        }
+
+        .submission-info ul {
+            padding-left: 20px; /* Indent the list items */
+            color: black; /* List text color is now black */
+        }
+
+        /* Style for the registration link section */
+        .registration-link {
+            margin-top: 20px;
+            font-size: 16px;
+            color: black; /* Registration link text color */
+        }
+
+        .registration-link p {
+            color: white; /* Change the color to white for the specific line */
+        }
+
+        .registration-link a {
+            display: inline-block;
+            padding: 10px;
+            background-color: #ff69b4; /* Light pink background for the link */
+            color: white; /* White text color for the link */
+            text-decoration: none; /* Remove underline from the link */
+            border-radius: 5px;
+            margin-top: 5px;
+            font-weight: bold;
+        }
+
+        .registration-link a:hover {
+            background-color: #ff1493; /* Darker pink when hovered */
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay muted loop class="background-video">
+            <source src="pdbk.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="container">
+        <h1>POSTER DESIGNING</h1>
+        
+        <!-- Only the second box (submission-info) is now displayed -->
+        <div class="submission-info">
+            <p><strong>Theme:</strong> <em>Future Tech: Innovations Shaping Tomorrow</em></p>
+            <p>1. Any editing software can be used to design the poster (e.g., Photoshop, Canva, GIMP, etc.).</p>
+            <p>2. Submissions must be done as per the instructions given below:
+                <ul>
+                    <li>An image file (JPEG or PNG).</li>
+                    <li>A document (PDF or Word) that includes the poster design and a short description (max 100 words).</li>
+                </ul>
+            </p>
+            <p>3. Ensure the poster design is original and does not infringe on any copyrights.</p>
+            <p>4. Posters should not exceed a file size of 10MB for each format.</p>
+            <p>5. Include your name, contact information, and any additional details you want to highlight in the description.</p>
+            <p><strong>Submission deadline:</strong> October 27, 2024</p>
+        </div>
+
+        <!-- New section for the registration link -->
+        <div class="registration-link">
+            <p><strong>Registration & File submission link:</strong></p>
+            <a href="https://forms.gle/s8eAG9uNs2vkp1cY9" target="_blank">Submit Here</a>
+        </div>
+    </div>
+</body>
+</html>

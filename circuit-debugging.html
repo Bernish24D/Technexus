@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circuit Debugging</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add styles for the event details box */
+        .event-details {
+            background-color: rgba(0, 0, 139, 0.9); /* Dark blue background */
+            padding: 10px; /* Reduced padding for inner content */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+            color: #fff; /* Text color */
+            line-height: 1.4; /* Reduced line spacing */
+            font-size: 16px; /* Reduced font size */
+        }
+
+        /* Style for event title */
+        h1 {
+            text-transform: uppercase;
+            text-align: center;
+            color: #fff;
+            margin-bottom: 15px; /* Reduced margin */
+            font-size: 24px; /* Reduced title font size */
+        }
+
+        /* Style for the container */
+        .container {
+            max-width: 700px; /* Reduced max width */
+            margin: 0 auto;
+            padding: 20px; /* Reduced padding */
+            position: relative; /* To ensure it stays on top of the video */
+        }
+
+        /* Style for the video */
+        .video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Send video behind content */
+            overflow: hidden;
+        }
+
+        .background-video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Style for spacing between rounds */
+        .event-details p {
+            margin: 5px 0; /* Reduced margins between paragraphs */
+        }
+
+        /* Style for individual round headers */
+        .round-title {
+            font-weight: bold;
+            color: yellow;
+            font-size: 16px; /* Reduced font size */
+        }
+
+        /* Style for the registration link */
+        .registration-link {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        .registration-link a {
+            display: inline-block;
+            padding: 10px;
+            background-color: #ff69b4;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .registration-link a:hover {
+            background-color: #ff1493;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay muted loop class="background-video">
+            <source src="cdbk.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="container">
+        <h1>Circuit Debugging</h1>
+        <div class="event-details">
+            <p><strong>Description:</strong> Join us for the exciting Circuit Debugging event, where participants will test their knowledge and skills in electronics and circuit design. The event consists of three challenging rounds, each designed to assess different competencies related to circuit theory and practical applications.</p>
+             <p class="round-title"><strong>Round 1: Basic Circuit Questions (Multiple Choice)</strong></p>
+            <p>Participants will face a series of multiple-choice questions focused on fundamental circuit concepts. This round aims to assess your theoretical understanding of circuits.</p>
+            <p><strong>Duration:</strong> 1 hour</p>
+            <p><strong>Slots:</strong></p>
+            <p>Slot 1: 9:00 AM - 10:00 AM</p>
+            <p>Slot 2: 10:00 AM - 11:00 AM</p>
+            <p class="round-title"><strong>Round 2: Circuit Design and Analysis</strong></p>
+            <p>In this round, participants will be tasked with designing a circuit. Questions will include determining the values of components that are suitable for attaining specified frequencies and analyzing output waveforms.</p>
+            <p class="round-title"><strong>Round 3: Practical Circuit Assembly</strong></p>
+            <p>The final round involves connecting components to build a functional circuit that meets specified output criteria. Participants will be evaluated on their practical skills and problem-solving abilities in a hands-on environment.</p>
+            <p><strong>Objective:</strong> Demonstrate your ability to apply theoretical knowledge to practical circuit design.</p>
+        </div>
+        <div class="registration-link">
+            <p><strong>Registration link:</strong></p>
+            <a href="https://forms.gle/xk6oQixQ37vmf5cx7" target="_blank">Click here to register</a>
+        </div>
+    </div>
+</body>
+</html>

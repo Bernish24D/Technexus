@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODEATHON</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add styles for the light box */
+        .codeathon-light-box {
+            background-color: rgba(0, 0, 139, 0.9); /* Dark blue with some transparency */
+            padding: 20px; /* Padding for inner content */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+        }
+
+        /* Additional styling for the event details */
+        .event-details {
+            font-size: 18px; /* Font size to match your requirements */
+            line-height: 1.5; /* Space between lines */
+            margin: 20px 0; /* Space above and below */
+            color: #fff; /* Change color as needed */
+            text-align: left; /* Align text to the left */
+        }
+
+        .event-details strong {
+            display: inline; /* Keep strong labels inline */
+            color: yellow; /* Color for labels like "Event Name" */
+        }
+
+        .event-details p {
+            margin: 0; /* Remove margin from paragraphs to align text properly */
+        }
+
+        /* Style for the title */
+        h1 {
+            text-transform: uppercase; /* Make the title uppercase */
+            color: #fff; /* Change color as needed */
+            text-align: center; /* Center the title */
+            margin-bottom: 20px; /* Space below the title */
+        }
+
+        /* Style for the registration link */
+        .registration-link {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        .registration-link a {
+            display: inline-block;
+            padding: 10px;
+            background-color: #ff69b4;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .registration-link a:hover {
+            background-color: #ff1493;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay muted loop class="background-video">
+            <source src="cbk.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="container">
+            <h1>Codeathon</h1>
+            <div style="margin-top: 50px;"></div> <!-- Adds space -->
+            <div class="light-box codeathon-light-box">
+                <div class="event-details">
+                    <p><strong>Event Name:</strong> Codeathon</p>
+                    <p></p> <!-- Blank line for spacing -->
+                    <p><strong>Description:</strong> Codeathon is an exciting competition designed to test participants' programming knowledge, problem-solving abilities, and real-world application skills across three challenging rounds.</p>
+                    <p></p> <!-- Blank line for spacing -->
+                    <p><strong>Team size:</strong> 3-4 members</p>
+                    <p></p> <!-- Blank line for spacing -->
+                    <p><strong>Round 1:</strong> Fundamental Programming Questions (Multiple Choice). This round assesses participants' theoretical knowledge through multiple-choice questions on topics like programming concepts, algorithms, and software development practices.</p>
+                    <p></p> <!-- Blank line for spacing -->
+                    <p><strong>Duration:</strong> 1 hour</p>
+                    <p><strong>Slots:</strong></p>
+                    <p>Slot 1: 9:00 AM - 10:00 AM</p>
+                    <p>Slot 2: 10:00 AM - 11:00 AM</p>
+                    <p></p> <!-- Blank line for spacing -->
+                    <p><strong>Round 2:</strong> Problem Solving and Algorithm Design. Participants will solve coding challenges that require creative thinking and efficient algorithm design.</p>
+                    <p></p> <!-- Blank line for spacing -->
+                    <p><strong>Round 3:</strong> Practical Coding and Application Development. In the final round, participants will implement real-world solutions for various objectives.</p>
+                </div>
+                <div class="registration-link">
+                    <p><strong>Registration link:</strong></p>
+                    <a href="https://forms.gle/Q6F8UvkUPixPmBW59" target="_blank">Click here to register</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

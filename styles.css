@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    overflow: hidden;
+}
+
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.branch-title {
+    font-size: 20px;
+    margin-bottom: 20px; /* Increased margin for space */
+}
+
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 20px 0; /* Space above and below the title */
+    text-shadow: 
+        1px 1px 0 rgba(0, 0, 0, 0.5), /* Slight shadow */
+        2px 2px 0 rgba(255, 255, 255, 0.5), /* Light shadow */
+        3px 3px 0 rgba(0, 0, 0, 0.5); /* More pronounced shadow */
+}
+
+.event-list {
+    font-size: 24px;
+    margin: 20px 0; /* Space below the event list */
+}
+
+.link-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.link-box {
+    display: block;
+    margin: 10px 0;
+    padding: 15px;
+    background-color: rgba(0, 123, 255, 0.8);
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.link-box:hover {
+    background-color: rgba(0, 102, 204, 1);
+}
+
+.light-box {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Darker shadow for contrast */
+    margin: auto;
+    max-width: 600px; /* Max width for the light box */
+    text-align: left; /* Align text to the left */
+}
+
+/* For Codeathon Light Box */
+.codeathon-light-box {
+    background-color: rgba(173, 216, 230, 0.8); /* Light blue background */
+}
+
+/* For Technical Quiz Light Box */
+.technical-quiz-light-box {
+    background-color: rgba(211, 211, 211, 0.8); /* Grey background */
+}
+
+/* Registration link style */
+.registration-link a {
+    display: inline-block;
+    padding: 10px;
+    background-color: #ff69b4;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.registration-link a:hover {
+    background-color: #ff1493;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 24px;
+    }
+}

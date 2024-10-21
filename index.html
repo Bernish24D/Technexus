@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECHNEXUS</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            overflow: hidden;
+        }
+
+        .video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .background-video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .branch-title {
+            font-size: 20px;
+            margin-bottom: 20px; /* Increased margin for space */
+        }
+
+        .title {
+            font-size: 32px;
+            font-weight: bold;
+            margin: 20px 0; /* Space above and below the title */
+            text-shadow: 
+                1px 1px 0 rgba(0, 0, 0, 0.5),
+                2px 2px 0 rgba(255, 255, 255, 0.5),
+                3px 3px 0 rgba(0, 0, 0, 0.5);
+        }
+
+        .event-list {
+            font-size: 24px;
+            margin: 20px 0; /* Space below the event list */
+        }
+
+        .link-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .link-box {
+            display: block;
+            margin: 10px 0;
+            padding: 15px;
+            background-color: rgba(0, 123, 255, 0.8);
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+            width: 80%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .link-box:hover {
+            background-color: rgba(0, 102, 204, 1);
+        }
+
+        @media (max-width: 768px) {
+            .title {
+                font-size: 28px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .title {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay muted loop class="background-video">
+            <source src="background-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="container">
+            <h2 class="branch-title"><strong>LICET IEEE STUDENT BRANCH</strong></h2>
+            <h1 class="title">TECHNEXUS</h1>
+            <h3 class="event-list">Event List</h3>
+            <div class="link-container">
+                <a href="codeathon.html" class="link-box">Codeathon</a>
+                <a href="circuit-debugging.html" class="link-box">Circuit Debugging</a>
+                <a href="technical-quiz.html" class="link-box">Technical Quiz</a>
+                <a href="poster-design.html" class="link-box">Poster Design</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

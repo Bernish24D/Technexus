@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add styles for the light box */
+        .technical-quiz-light-box {
+            background-color: rgba(128, 128, 128, 0.9); /* Grey with slight transparency */
+            padding: 15px; /* Reduced padding */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+            max-height: 450px; /* Set a max height */
+            overflow-y: auto; /* Enable scrolling if content exceeds height */
+        }
+
+        /* Additional styling for the event details */
+        .event-details {
+            font-size: 16px; /* Reduced font size */
+            line-height: 1.4; /* Space between lines */
+            margin: 10px 0; /* Reduced margin */
+            color: #fff; /* Change color as needed */
+            text-align: left; /* Align text to the left */
+        }
+
+        .event-details strong {
+            display: inline; /* Keep strong labels inline */
+            color: yellow; /* Color for labels like "Event Name" */
+        }
+
+        .event-details p {
+            margin: 0; /* Remove margin from paragraphs to align text properly */
+        }
+
+        /* Style for the title */
+        h1 {
+            text-transform: uppercase; /* Make the title uppercase */
+            color: #fff; /* Change color as needed */
+            text-align: center; /* Center the title */
+            margin-bottom: 10px; /* Reduced space below the title */
+        }
+
+        /* Style for the video container */
+        .video-container {
+            position: relative;
+            overflow: hidden; /* Hide overflow */
+            height: 100vh; /* Use full height of the viewport */
+        }
+
+        .background-video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Cover the entire container */
+        }
+
+        /* Style for the registration link */
+        .registration-link {
+            margin-top: 10px; /* Reduced margin */
+            font-size: 16px;
+            color: black; /* Registration link text color */
+        }
+
+        .registration-link a {
+            display: inline-block;
+            padding: 10px;
+            background-color: #ff69b4;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .registration-link a:hover {
+            background-color: #ff1493;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay muted loop class="background-video">
+            <source src="tqbk.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="container">
+            <h1>Technical Quiz</h1>
+            <div class="light-box technical-quiz-light-box">
+                <div class="event-details">
+                    <p><strong>Event name:</strong> Technical Quiz</p>
+                    <p><strong>Total Rounds:</strong> 4</p>
+                    <p><strong>Team Size:</strong> 2 members</p>
+
+                    <p><strong>Round 1:</strong></p>
+                    <p>Duration: 30 minutes (11:00-11:30 AM)<br>
+                    Format: Pen and paper<br>
+                    Content: Multiple choice questions, riddles, etc.</p>
+
+                    <p><strong>Round 2:</strong></p>
+                    <p>Task: Guess components from displayed numbers.<br>
+                    Hints: 4 hints per number; fewer hints used = more points.<br>
+                    Elimination: Based on cumulative scores from Rounds 1 and 2.</p>
+
+                    <p><strong>Round 3:</strong></p>
+                    <p>Initial Points: Each team starts with a set number of points.<br>
+                    Format: Teams choose a product and bet points on it.<br>
+                    Scoring: Answer 4-5 rapid-fire questions; correct answers gain bet points, incorrect answers deduct points for the opposing team.<br>
+                    Elimination: Teams can be eliminated in this round.</p>
+
+                    <p><strong>Round 4:</strong></p>
+                    <p>Format: Buzzer round; teams answer 4-5 questions about a fixed product.<br>
+                    Scoring: Points for correct answers, deductions for incorrect ones.<br>
+                    Final Task: Identify the product from the answers provided.</p>
+
+                    <p><strong>Prizes:</strong> Awarded to the top three teams.</p>
+                </div>
+                <div class="registration-link">
+                    <p><strong>Registration link:</strong></p>
+                    <a href="https://forms.gle/iiVbbgmQEqagkCA87" target="_blank">Click here to register</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

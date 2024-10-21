@@ -22,7 +22,6 @@
             position: relative; /* To stay on top of the video */
             color: black; /* Text color for all except title */
             z-index: 2; /* Ensure the container is above the background */
-            overflow: visible; /* Ensure the content doesn't scroll separately */
         }
 
         /* Style for the video background */
@@ -40,20 +39,6 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-        }
-
-        /* Style for each pink box */
-        .link-box {
-            background-color: pink;
-            color: black;
-            padding: 15px;
-            margin: 10px;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-            width: 180px;
-            text-align: center;
-            font-size: 16px;
-            font-weight: bold;
         }
 
         /* Style for the heading (title remains white) */
@@ -74,7 +59,7 @@
             margin-top: 20px;
             font-size: 16px;
             text-align: left; /* Align all text to the left */
-            max-height: none; /* Remove max-height to let it expand */
+            /* Removed max-height to let it expand */
             overflow: visible; /* Ensure no scrollbar for this box */
         }
 
